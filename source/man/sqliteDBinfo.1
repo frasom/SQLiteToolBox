@@ -1,0 +1,56 @@
+.\"Created with GNOME Manpages Editor Wizard
+.\"http://sourceforge.net/projects/gmanedit2
+.TH sqliteDBinfo 1 "Jan, 2018" "" "sqliteDBinfo"
+
+.SH NAME
+sqliteDBinfo \- program give information about a SQLite Database
+.SH SYNOPSIS
+.B sqliteDBinfo
+.RI DATABASEFILE
+.br
+
+.SH DESCRIPTION
+.B sqliteDBinfo
+analyzed the sqlite_master table of a SQLite database and give the user informationen about the database structure.
+
+.SH USAGE
+sqliteDBinfo DATABASEFILE 
+
+.SH EXAMPLE
+$ sqliteDBinfo db.sqlite 
+.br 
+type = table
+.br
+name = 	customer
+.br
+tbl_name = 	customer 
+.br
+rootpage = 2
+.br
+sql = CREATE TABLE customer (id integer primary key, name text, givenname text)
+.br
+.br
+type = table
+.br
+name = address
+.br
+tbl_name = address
+.br
+rootpage = 3
+.br
+sql = CREATE TABLE "address" ("id" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL , "id" INTEGER, "str" VARCHAR, "housenr" VARCHAR, "postcode" VARCHAR, "town" VARCHAR)
+
+.SH ERRORS
+sqliteDBinfo response the sqlite3 error message (sqlite3_errmsg).
+
+.SH BUGS
+.PP
+Probably there are some, feel free to fix it and publish a new version.
+
+.SH SEE ALSO
+.BR sqlite2csv (1)
+
+.SH AUTHORS
+.nf
+Idea and first edition by Frank Sommer [mailto:frank.sommer.fs@gmail.com] <frank.sommer.fs at gmail dot com>
+

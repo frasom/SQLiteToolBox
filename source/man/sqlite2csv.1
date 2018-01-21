@@ -1,0 +1,41 @@
+.\"Created with GNOME Manpages Editor Wizard
+.\"http://sourceforge.net/projects/gmanedit2
+.TH sqlite2csv 1 "Jan, 2018" "" "sqliteDBinfo"
+
+.SH NAME
+sqlite2csv \- program dump a SQLite Database table
+.SH SYNOPSIS
+.B sqlite2csv
+.RI DATABASEFILE
+.br
+
+.SH DESCRIPTION
+.B sqlite2csv
+dump a table of a SQLite database in CSV format to the standard output. 
+
+.SH USAGE
+sqlite2csv DATABASEFILE TABLE
+
+.SH EXAMPLE
+$ sqlite2csv db.sqlite adress
+.br 
+1;James;Bond;85 Albert Embankment;London;SE1 7TP;United Kingdom
+.br 
+2;Jim;Rockford;29 Paradise Cove Road;Malibu;CA 90265;USA
+.br 
+3;Thomas;Magnum;41-505 Kalanianaole Highway;Waimanalo;HI 96795;USA
+
+.SH ERRORS
+sqlite2csv response the sqlite3 error message (sqlite3_errmsg).
+
+.SH BUGS
+.PP
+Probably there are some, feel free to fix it and publish a new version.
+
+.SH SEE ALSO
+.BR sqliteDBinfo (1)
+
+.SH AUTHORS
+.nf
+Idea and first edition by Frank Sommer [mailto:frank.sommer.fs@gmail.com] <frank.sommer.fs at gmail dot com>
+

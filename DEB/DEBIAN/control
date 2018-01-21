@@ -1,0 +1,12 @@
+Package: sqlitetoolbox
+Version: 0.3.0-0
+Section: misc/admin
+Priority: extra
+Architecture: amd64
+Depends:
+Installed-Size: 20
+Maintainer: Frank Sommer <frank.sommer.fs@gmail.com>
+Homepage: https://bitbucket.org/fsom/sqlitetoolbox
+Description: Configfile changes Logger
+ ﻿SQLite tools SQLiteDBinfo show database info and SQLite2csv converter sqlite to CSV
+
