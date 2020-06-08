@@ -9,4 +9,9 @@
 ## SQLite2csv
     -.SQLite-Database to CSV converter
 
+## Installation
+Debian/Ubuntu
 
+Download 'conflogger.deb' and install with dpkg:
+
+sudo dpkg -i /PATH-TO-PACKAGE/conflogger.deb
