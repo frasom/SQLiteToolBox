@@ -21,7 +21,7 @@
 #include <string.h>
 #include <sqlite3.h>
 
-#define VERSION	"0.5"
+#define VERSION	"0.5.1"
 
 void tabel_dump();						/* forward declaration  */
 
@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 	int id;
 	sqlite3 *db_handler;
 	
-	if (argc < 3) { 					/*  missing parameter */
+	 if (argc < 3 ||!strcmp(argv[1], "--help")) { 					/*  missing parameter or help me*/
 		printf(" \n");
 		printf("Usage: %s:", argv[0]);
 		printf(" sqlite-FILE TABLENAME \n");
